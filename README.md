@@ -2,6 +2,8 @@
 
 Listing GitHub repositories which you starred.
 
+![amanogawa](https://cloud.githubusercontent.com/assets/116996/6059979/231f04be-ad7b-11e4-8f75-03b7a8590a8c.gif)
+
 ## Installation
 
 Add this line to your application's Gemfile:
