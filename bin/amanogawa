@@ -4,12 +4,16 @@ require 'slop'
 require 'amanogawa'
 
 opts = Slop.parse do |o|
-  o.string '-t'    , '--token'    , 'oauth access token'
-  o.string '-u'    , '--username' , 'github username'
-  o.string '-p'    , '--password' , 'github password'
-  o.string '-f'    , '--format'   , 'output format', default: "%f - %d"
-  o.bool '--sync'  , 'Sync starred repositories'
-  o.bool '--fetch' , 'Fetch GitHub API actually, No use local cache'
+  o.string '-t'      , '--token'    , 'oauth access token'
+  o.string '-u'      , '--username' , 'github username'
+  o.string '-p'      , '--password' , 'github password'
+  o.string '-f'      , '--format'   , 'output format', default: "%f - %d"
+  o.bool               '--sync'     , 'Sync starred repositories'
+  o.bool               '--fetch'    , 'Fetch GitHub API actually, No use local cache'
+  o.on     '-h'      , '--help'     , 'Show help' do
+    puts o
+    exit
+  end
 end
 
 if opts[:sync]
