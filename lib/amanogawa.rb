@@ -12,7 +12,9 @@ class Amanogawa
     "%u" => "url",
     "%s" => "ssh_url",
     "%g" => "git_url",
-    "%a" => "starred_at",
+    "%C" => "created_at",
+    "%P" => "pushed_at",
+    "%U" => "updated_at",
   }
 
   class << self
@@ -63,7 +65,7 @@ class Amanogawa
 
     def fetch
       @client.auto_paginate = true
-      @client.starred(accept: "application/vnd.github.v3.star+json")
+      @client.starred
     end
 
     def sync
