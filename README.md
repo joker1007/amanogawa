@@ -1,4 +1,5 @@
 # Amanogawa
+[![Gem Version](https://badge.fury.io/rb/amanogawa.svg)](http://badge.fury.io/rb/amanogawa)
 
 Listing GitHub repositories which you starred.
 
