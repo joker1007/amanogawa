@@ -62,7 +62,6 @@ $ amanogawa --fetch -t <your auth token>
 
 ```sh
 $ amanogawa -f "%f - %u"
-jquense/react-widgets - set of stateless ui widgets for React
 jquense/react-widgets - https://api.github.com/repos/jquense/react-widgets
 geraintluff/uri-templates - https://api.github.com/repos/geraintluff/uri-templates
 ismasan/oat - https://api.github.com/repos/ismasan/oat
@@ -90,6 +89,20 @@ FORMAT_TABLE = {
 ```
 
 And, convert `%t` to Tab.
+
+
+## Sample Use Case
+
+```zsh
+# .zshrc
+
+alias -g ST="amanogawa -f '%f%t%d' | column -t -s '    ' | peco | awk '{print \$1}'"
+```
+
+```sh
+$ ST | xargs hub browse # Select repository by peco and open GitHub page it
+$ ST | xargs hub clone  # Select repository by peco and clone it
+```
 
 
 ## Contributing
