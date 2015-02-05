@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["kakyoin.hierophant@gmail.com"]
   spec.summary       = %q{Listing GitHub repositories which you starred.}
   spec.description   = %q{Listing GitHub repositories which you starred.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/joker1007/amanogawa"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
