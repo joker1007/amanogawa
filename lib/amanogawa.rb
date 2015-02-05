@@ -11,6 +11,7 @@ class Amanogawa
     "%u" => "url",
     "%s" => "ssh_url",
     "%g" => "git_url",
+    "%h" => "homepage",
     "%C" => "created_at",
     "%P" => "pushed_at",
     "%U" => "updated_at",
