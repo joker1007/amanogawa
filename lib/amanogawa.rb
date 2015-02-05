@@ -1,5 +1,4 @@
 require 'octokit'
-require 'oj'
 require 'fileutils'
 require "amanogawa/version"
 

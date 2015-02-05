@@ -20,7 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "octokit", "~> 3.0"
   spec.add_runtime_dependency "netrc"
-  spec.add_runtime_dependency "oj"
   spec.add_runtime_dependency "slop", "~> 4.0"
 
   spec.add_development_dependency "bundler", "~> 1.7"
